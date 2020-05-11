@@ -4,7 +4,7 @@ import pylab as plt
 #import datetime as dt
 #import geopandas as gpd
 
-df = pd.read_csv('/Users/nicholasjones/Desktop/code/wbg-location-data/notebooks/nick/df_india_may9.csv')
+df = pd.read_csv('data/df_india_may9.csv')
 df.ds = pd.to_datetime(df.ds)
 df = df.set_index('ds')
 df['datetime'] = df.index.copy()
