@@ -43,6 +43,7 @@ handles, labels = ax.get_legend_handles_labels()
 ax.legend(handles=handles[1:], labels=labels[1:])
  
 st.write(f)
+st.pyplot()
 
 # Table
 
