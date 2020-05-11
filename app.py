@@ -42,7 +42,6 @@ ax.yaxis.set_label_text("")
 handles, labels = ax.get_legend_handles_labels()
 ax.legend(handles=handles[1:], labels=labels[1:])
  
-st.write(f)
 st.pyplot()
 
 # Table
@@ -61,7 +60,7 @@ st.table(df_change)
 # altair line chart
 
 st.subheader("Explaining mobility decline with states' characteristics")
-st.write('This plot compares decline in mobility during the past 7 days with the February baseline period. Select a variable from income (Net State Domestic Product - NSDP), percent population that lives in an urban area, population density (people per km2), or total population. Income and urban population both correlate with decline in mobility.')
+st.write('This plot compares decline in mobility during the past 7 days with the February baseline period. Select a variable from income (Net State Domestic Product, US dollars - NSDP), percent population that lives in an urban area, population density (persons per km2), or total population. Income and urban population both correlate with decline in mobility.')
 states_df = pd.read_csv('data/states_data.csv')
 states_df.nsdp = [x[4:] for x in states_df.nsdp]
 states_df.nsdp = states_df.nsdp.str.replace(',','')
