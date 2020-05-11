@@ -8,6 +8,8 @@ import numpy as np
 from scipy.stats import pearsonr
 #import geopandas as gpd
 
+st.write('hello')
+
 df = pd.read_csv('data/df_india_may9.csv')
 df.ds = pd.to_datetime(df.ds)
 df = df.set_index('ds')
